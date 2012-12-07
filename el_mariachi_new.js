@@ -1,16 +1,22 @@
 var Robot = function(robot){
     robot.turnLeft(robot.angle % 90);
 };
+
 Robot.prototype.onIdle = function(ev) {
     var robot = ev.robot;
+    var count = 0;
+
     if (robot.parentId) {
-        robot.ahead(1);
-        robot.turnGunRight(1);
+        robot.ahead(20);
+        robot.turnGunRight(16.18);
+        robot.turnRight(1.618);
+    } else {
+        robot.ahead(-20);
+        robot.turnGunLeft(16.18);
+        robot.turnleft(1.618);
     }
-    else {
-        robot.ahead(-1);
-        robot.turnGunLeft(1);
-    }
+
+
 };
 Robot.prototype.onWallCollision = function(ev) {
     var robot = ev.robot;
@@ -26,7 +32,8 @@ Robot.prototype.onRobotCollision = function(ev) {
     robot.ignore('onRobotCollision')
     if (ev.bearing > -90 && ev.bearing < 90) {
         robot.back(100);
-    } else {
+    } 
+    else {
         robot.ahead(100);
     }
 
@@ -36,11 +43,9 @@ Robot.prototype.onRobotCollision = function(ev) {
     }
     robot.listen('onRobotCollision')
 };
-
 Robot.prototype.onHitByBullet = function(ev) {
-    var robot;
-    robot.clone()
-    robot = ev.robot;
+    var robot = ev.robot;
+    robot.clone();
     robot.turn(45 - ev.bulletBearing);
     robot.ahead(-50);
     robot.turn(45 - ev.bulletBearing);
