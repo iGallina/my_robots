@@ -15,8 +15,6 @@ module Scraper
     class SearchScraper
         include Capybara::DSL
         def search base_url, url
-            base_url = "fightcodegame.com"
-            url = "/profile/iGallina"
             begin
                 Capybara.app_host = base_url
                 visit(url)
@@ -35,4 +33,8 @@ module Scraper
             end
         end
     end
+end
+
+while true do
+    search "fightcodegame.com", "/profile/iGallina"
 end
