@@ -16,6 +16,7 @@ while [  true ]; do
     sleep 3;
     wget -x --load-cookies cookies.txt http://fightcodegame.com/robots/randomfight/c0c72973e35962db255a --user-agent="Mozilla/5.0 Macintosh Intel Mac OS X 10_8_2 AppleWebKit/537.11 KHTML, like Gecko Chrome/23.0.1271.95 Safari/537.11" --max-redirect 1 --timeout=3 --random-wait;
     wget -x --load-cookies cookies.txt http://fightcodegame.com/robots/randomfight/4242547  --user-agent="Mozilla/5.0 Macintosh Intel Mac OS X 10_8_2 AppleWebKit/537.11 KHTML, like Gecko Chrome/23.0.1271.95 Safari/537.11" --max-redirect 1 --timeout=3 --random-wait;
+    wget -x --load-cookies cookies.txt http://fightcodegame.com/robots/fight/c0c72973e35962db255a/4231465 --user-agent="Mozilla/5.0 Macintosh Intel Mac OS X 10_8_2 AppleWebKit/537.11 KHTML, like Gecko Chrome/23.0.1271.95 Safari/537.11" --max-redirect 1 --timeout=3 --random-wait;
     let COUNTER=COUNTER+1;
     sleep 15;
 done
