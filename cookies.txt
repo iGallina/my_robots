@@ -1,0 +1,5 @@
+fightcodegame.com   FALSE   /   FALSE   0   connect.sess    s%3Aj%3A%7B%22passport%22%3A%7B%22user%22%3A2836%7D%7D.klnuSf6np51YFOBtYzh6Odmz%2BBzXiSjrdEtbdqjQdmk
+.fightcodegame.com  TRUE    /   FALSE   1418072003  __utma  2703527.17429565.1354736660.1354986013.1354998120.18
+.fightcodegame.com  TRUE    /   FALSE   1355001803  __utmb  2703527.4.10.1354998120
+.fightcodegame.com  TRUE    /   FALSE   0   __utmc  2703527
+.fightcodegame.com  TRUE    /   FALSE   1370768003  __utmz  2703527.1354736660.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
