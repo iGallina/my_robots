@@ -1,6 +1,6 @@
 #!/bin/bash
 COUNTER=0
-while [ COUNTER < 10000 ]; do
+while [  $COUNTER -lt 10000 ]; do
     echo Rodando $COUNTER;
     wget -x --load-cookies cookies.txt http://fightcodegame.com/robots/fight/c0c72973e35962db255a/4231465   --user-agent="Mozilla/5.0 Macintosh Intel Mac OS X 10_8_2 AppleWebKit/537.11 KHTML, like Gecko Chrome/23.0.1271.95 Safari/537.11" --max-redirect 2 --timeout=3 --random-wait;
     sleep 1;
